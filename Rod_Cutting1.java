@@ -6,7 +6,7 @@ import java.io.Reader;
 import java.io.FileInputStream;
 import java.util.Scanner;
 
-import javax.net.ssl.ExtendedSSLSession;
+
 import java.util.Arrays;
 import java.io.BufferedReader;
 import java.util.*;
@@ -18,9 +18,13 @@ public class Rod_Cutting1
 {
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the length of the rod");
 		int n=scanner.nextInt();
+		System.out.println("Enter the amount");
 		int amt=scanner.nextInt();
 		int p[]=new int[n+1];
+		System.out.println("enter the elements of array using space in between");
+		
 		for(int y=1;y<=n;y++)
 		{
 			p[y]=scanner.nextInt();
@@ -83,12 +87,14 @@ public class Rod_Cutting1
 
 	int	i=n;
 	int	j=amt;
-	if(opt[i][j]==0)
+	if(opt[i][j]==0||opt[i][j]>n)
 	{
 		System.out.println("NO");
 		
 	}
 	else{
+		System.out.println("Yes");
+		System.out.println("The following are the pieces");
 		while(i-1>=0&&j>=0)
 		{
 			

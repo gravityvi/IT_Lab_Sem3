@@ -14,7 +14,9 @@ public class Rod_cutting
 {
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the total length of the rod");
 		int n=scanner.nextInt();
+		System.out.println("Enter the elements using space in between");
 		int p[]=new int[n+1];
 		for(int y=1;y<=n;y++)
 		{
@@ -39,8 +41,10 @@ public class Rod_cutting
 			}
 		}
 		scanner.close();
+		System.out.print("following is the maximum profit gained:\n");
 		System.out.print(opt[n][n]);
 		System.out.print("\n");
+		System.out.println("following are the items");
 		int	i=n;
 		int j=n;
 		while(i>=1&&j>=1)

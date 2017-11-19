@@ -9,15 +9,10 @@
 ### Lab 9 Questions
 
 ##### Question 1
-Implement the basic Depth-First Search (DFS) algorithm. Adapt it to develop code for the following additional problems: 
-Construct the Block-Cut-point tree associated with any input connected undirected graph.
-Perform topological sort of any input directed acyclic graph. 
-Find the strongly connected components of any input directed graph.
-Solution code in "assign9.java"
-
-###### Work left
-- [ ] Construct the Block-Cut-point tree associated with any input connected undirected graph.
-
+- [x] Implement the basic Depth-First Search (DFS) algorithm. Adapt it to develop code for the following additional problems <assign9.java>
+- [ ] Construct the Block-Cut-point tree associated with any input connected undirected graph.<assign9.java>
+- [x] Perform topological sort of any input directed acyclic graph. <assign9.java>
+- [x] Find the strongly connected components of any input directed graph.<assign9.java>
 
 
 ##### Question 2

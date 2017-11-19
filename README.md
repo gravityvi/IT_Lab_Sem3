@@ -14,7 +14,7 @@ Solution code in "assign9.java"
 
 
 
-###### Question 2
+##### Question 2
 Implement code to classify the edges of a positive weighted connected undirected graph into the following three disjoint categories:
 Those that lie in all minimum spanning trees
 Those that lie in no minimum spanning trees

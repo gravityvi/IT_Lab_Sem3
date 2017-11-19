@@ -18,22 +18,35 @@ public class assign10
         return max;
     }
 
-
+    public static void Radix(int[] Ar,int n,int m)
+    {
+        for(int exp=1;m/exp>0;exp=10*exp)
+        {
+            Counting(Ar,n,exp);
+            
+            
+        }
+    }
   
 
 //counting sort function
-    public static void Counting(int[] Ar,int k,int n) // k is the range of given input // n is the number of inputs given
+    public static void Counting(int[] Ar,int n,int exp) // k is the range of given input // n is the number of inputs given
     {
         sort=new int[n];
-        int[] index=new int[k+1];
+        int[] index=new int[10];
+
+        for(int i=0;i<10;i++)
+        {
+            index[i]=0;
+        }
         
         for(int i=0;i<n;i++)
         {
-            index[Ar[i]]++;
+            index[(Ar[i]/exp)%10]++;
 
         }
 
-        for(int i=2;i<=k;i++)
+        for(int i=1;i<10;i++)
         {
             index[i]=index[i]+index[i-1];
 
@@ -41,15 +54,21 @@ public class assign10
 
         
         
-        //System.out.println(index[5]);
+        
 
-        for(int i=0;i<n;i++)
+        for(int i=n-1;i>=0;i--)
         {
-            sort[index[Ar[i]]-1]=Ar[i];
-            index[Ar[i]]--;
+            sort[index[(Ar[i]/exp)%10]-1]=Ar[i];
+            index[(Ar[i]/exp)%10]--;
 
         }
 
+        for(int i=0;i<n;i++)
+        {
+            Ar[i]=sort[i];
+        }
+
+        
     }
 
 
@@ -66,13 +85,15 @@ public class assign10
 
        
        
-        int k=getMax(Ar);
+        int m=getMax(Ar);
        
-        Counting(Ar, k, n);
+        Radix(Ar, n, m);
+       
+        System.out.println("Answer for this input is as follows:");
         
         for(int i=0;i<n;i++)
         {
-            System.out.print(sort[i]+" ");
+            System.out.print(Ar[i]+" ");
         }
 
     }

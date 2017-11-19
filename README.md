@@ -9,7 +9,7 @@ Perform topological sort of any input directed acyclic graph.
 Find the strongly connected components of any input directed graph.
 Solution code in "assign9.java"
 ######Work left
--[ ] Construct the Block-Cut-point tree associated with any input connected undirected graph.
+- [ ] Construct the Block-Cut-point tree associated with any input connected undirected graph.
 
 
 

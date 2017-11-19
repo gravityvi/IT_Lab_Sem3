@@ -1,5 +1,11 @@
 # IT_Lab_Sem3
 
+### Lab 10 QUestions
+- [ ]  Implement Edmond Karp Algorithm to compute the maximum flow in a flow network. 
+- [ ] Implement Counting sort and radix sort.
+- [ ]  Implement direct addressing in a table. Implement hashing with chaining.
+- [ ]  Implement hashing by probing using different schemes. Take care of deleted slots and differentiate them from slots never occupied.
+
 ### Lab 9 Questions
 
 ##### Question 1
@@ -19,3 +25,4 @@ Implement code to classify the edges of a positive weighted connected undirected
 Those that lie in all minimum spanning trees
 Those that lie in no minimum spanning trees
 Those that are present in at least one minimum spanning tree and absent in at least one minimum spanning tree.
+

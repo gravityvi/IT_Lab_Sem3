@@ -83,6 +83,7 @@ public class assign10
 
         }
 
+        scanner.close();
        
        
         int m=getMax(Ar);
